@@ -14,3 +14,11 @@
 * Message + private key = **signature** (hash string)
 * Signature + message = public address (or public key)
 * We can sign data with our private key and then people can prove that it was us that signed it
+
+### [Encryption](https://youtu.be/LGEBqz1uG1U)
+* Anybody in the world knowing your public key can encrypt you a message send it publicly and only you with your private key can read that **public message**
+* **Symmetric** cryptography - shared secret (key), each side has own copy of it, and can encrypt/decrypt messages
+* **Asymmetric** cryptography - key pair, anyone can encrypt a message to your key pair
+* **TLS** - asymmetric cryptography to set up a secret to have symetric cryptography
+* **Address** = end of hashed public key
+* You can take a public key and send a message to the public that will be opened only private key pair holder, but that won't know who the sender is. So you take a message, you sign it, you encrypt it with their public key, they get it back, they decrypt it with their private key, and then they recover the message, and get the sender address. So they not only can read it but also prove who the sender was.
