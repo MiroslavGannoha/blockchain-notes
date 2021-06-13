@@ -19,3 +19,14 @@
 3. **Client Key Exchange** - Browser checks server's certificate to make sure they are legit. Then generates a 'pre-master key' so both sides can use it later when we generate a unique key. Browser encrypts that pre-master key with server's public key and then sends it to him.
 4. **Change Cipher spec** - server decrypts the pre-master key using its private key. Then server and client generate the same 'shared secret' that they are going to use as a symmetric key.
 5. **Everything is now secured** - Now all data going back and forth between client and server is now secured for the rest of the session.
+
+### [HTTPS SSL TLS - differences](https://howhttps.works/https-ssl-tls-differences/)
+* **HTTP** (HyperText Transfer Protocol) is the protocol used by your browser and web servers to communicate and exchange information.
+* **HTTPS** is the secured version of HTTP.
+* When that exchange of data is encrypted with **SSL/TLS**, then we call it HTTPS. The 'S' stands for Secure.
+* **SSL** stands for 'Secure Sockets Layer'. A protocol created by Netscape.
+* In 1999 Netscape gave control of SSL protocol to the **IETF**: Internet Engineering Task Force.
+* Before 1999 ended, IETF released **TLS** version 1.0 (Which was really SSL 3.1).
+* **SSL 3.0** was officially deprecated in 2015.
+* Click [here to check](https://clienttest.ssllabs.com:8443/ssltest/viewMyClient.html) the current TLS version for your browser.
+* **TLS 1.3** brings great security improvements and removes old weaker features. TLS 1.2 is still the recommended version if you are reading this in Spring/Summer 2020.
