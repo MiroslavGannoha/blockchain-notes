@@ -22,3 +22,10 @@
 * **TLS** - asymmetric cryptography to set up a secret to have symetric cryptography
 * **Address** = end of hashed public key
 * You can take a public key and send a message to the public that will be opened only private key pair holder, but they won't know who the sender is. So you take a message, you sign it, you encrypt it with their public key, they get it back, they decrypt it with their private key, and then they recover the message, and get the sender address. So they not only can read it but also prove who the sender was.
+
+### [Distributed Ledger](https://youtu.be/z11wj9OcA4U)
+* A **distributed ledger** (also called a shared ledger or distributed ledger technology or DLT) is a consensus of replicated, shared, and synchronized digital data geographically spread across multiple sites, countries, or institutions. Unlike with a centralized database, there is no central administrator.
+* A **peer-to-peer network** is required as well as consensus algorithms to ensure replication across nodes is undertaken.
+* **Replay attack** when a fraud can publish a message many more times within the network when it is supposed to be sent only once
+* **Nonce** ("number, once") one time integer that tracks your transactions to prevent publishing a message (transaction) multiple times
+
