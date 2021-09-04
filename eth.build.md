@@ -1,7 +1,7 @@
 ## ETH.BUILD Course notes
 ### [Hash Function](https://youtu.be/QJ010l-pBpE)
 * It is basically like a fingerprint
-* Output - 64 length hexadecimal string (ti provides a human-friendly representation of binary-coded values)
+* Output - 64 length hexadecimal string (it provides a human-friendly representation of binary-coded values)
 * Same input - always the same output (deterministic)
 * Hash string is one directional - only possible to guess secret with "brute force"
 * Any little change in input string will change output hash function completely
@@ -21,4 +21,4 @@
 * **Asymmetric** cryptography - key pair, anyone can encrypt a message to your key pair
 * **TLS** - asymmetric cryptography to set up a secret to have symetric cryptography
 * **Address** = end of hashed public key
-* You can take a public key and send a message to the public that will be opened only private key pair holder, but that won't know who the sender is. So you take a message, you sign it, you encrypt it with their public key, they get it back, they decrypt it with their private key, and then they recover the message, and get the sender address. So they not only can read it but also prove who the sender was.
+* You can take a public key and send a message to the public that will be opened only private key pair holder, but they won't know who the sender is. So you take a message, you sign it, you encrypt it with their public key, they get it back, they decrypt it with their private key, and then they recover the message, and get the sender address. So they not only can read it but also prove who the sender was.
