@@ -29,3 +29,8 @@
 * **Replay attack** when a fraud can publish a message many more times within the network when it is supposed to be sent only once
 * **Nonce** ("number, once") one time integer that tracks your transactions to prevent publishing a message (transaction) multiple times
 
+### [Byzantine Generals](https://youtu.be/c7yvOlwBPoQ)
+* The Byzantine Generals Problem is a term etched from the computer science description of a situation where involved parties must agree on a single strategy in order to avoid complete failure, but where some of the involved parties are corrupt and disseminating false information or are otherwise unreliable.
+* The agreement between all of these nodes (generals) is called **consensus**.
+* Anyone can send messages into the network but only generals that have an army will be able to do enough **"proof-of-work"** to prove that their message authentic.
+
