@@ -27,10 +27,18 @@
 * A **distributed ledger** (also called a shared ledger or distributed ledger technology or DLT) is a consensus of replicated, shared, and synchronized digital data geographically spread across multiple sites, countries, or institutions. Unlike with a centralized database, there is no central administrator.
 * A **peer-to-peer network** is required as well as consensus algorithms to ensure replication across nodes is undertaken.
 * **Replay attack** when a fraud can publish a message many more times within the network when it is supposed to be sent only once
-* **Nonce** ("number, once") one time integer that tracks your transactions to prevent publishing a message (transaction) multiple times
+* **Nonce** ("number used once") one time integer that tracks your transactions to prevent publishing a message (transaction) multiple times
 
 ### [Byzantine Generals](https://youtu.be/c7yvOlwBPoQ)
 * The Byzantine Generals Problem is a term etched from the computer science description of a situation where involved parties must agree on a single strategy in order to avoid complete failure, but where some of the involved parties are corrupt and disseminating false information or are otherwise unreliable.
 * The agreement between all of these nodes (generals) is called **consensus**.
 * Anyone can send messages into the network but only generals that have an army will be able to do enough **"proof-of-work"** to prove that their message authentic.
 
+### [Blockchain](https://youtu.be/zcX7OJ-L8XQ)
+* Nonce lets us tweak the hash of the block, thus we are doing work finding a leading zero of a hash
+* The previous block's hash is going to be part of the next block this is how the **chain of blocks** is formed
+* Trying to find nonce we are basically mining, we are using our limited CPU power to arbitrarily throw random hashes at this until we find the hash that has the required amount of leading zeros
+* **Coinbase** - link to a miner in the block
+* To incentivize the miners who are spending money to buy the rigs and secure the network, with all their hash power, we give them a cut called the **block reward** of each block that they mined.
+* In a situation where two new blocks mined concurrently by two different miners, the miner with the **longest valid chain** wins, but the reward gets split between both of them
+* As the blocks are mined they become more and more secure. Because if at least one tiny little piece in one of the blocks gets changed all blocks become invalid, because their hashes will lose leading zeros. So you can't change anything once the block is already mined.
