@@ -42,3 +42,10 @@
 * To incentivize the miners who are spending money to buy the rigs and secure the network, with all their hash power, we give them a cut called the **block reward** of each block that they mined.
 * In a situation where two new blocks mined concurrently by two different miners, the miner with the **longest valid chain** wins, but the reward gets split between both of them
 * As the blocks are mined they become more and more secure. Because if at least one tiny little piece in one of the blocks gets changed all blocks become invalid, because their hashes will lose leading zeros. So you can't change anything once the block is already mined.
+
+
+### [Transactions](https://youtu.be/er-0ihqFQB0)
+* Thousands of people in the pool are bidding, fee is like a bid, miners pick transactions from the pool, and put them into the block.
+* Transaction consist of - value, data, gas, gasPrice, nonce, to(address). "From address" is derived, because the sender signs the transaction with his private key before sending it.
+* Decimals are not supported by the system so because of that everything is converted to wei under the hood.
+* 10^18 wei = 1 eth, 10^9 wei = 1 gwei(giga wei).
