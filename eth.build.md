@@ -49,6 +49,7 @@
 * Transaction consist of - value, data, gas, gasPrice, nonce, to(address). "From address" is derived, because the sender signs the transaction with his private key before sending it.
 * Decimals are not supported by the system so because of that everything is converted to wei under the hood.
 * 10^18 wei = 1 eth, 10^9 wei = 1 gwei(giga wei).
+* When we sign a transaction and send it we get a **transaction hash**.
 
 ### [Meta Transactions](https://youtu.be/CbbcISQvy1E)
 * To deploy a smart contract we send a transaction without a "to" address, and the "data" of a transaction is the byte code of a contract.
