@@ -53,3 +53,12 @@
 ### [Meta Transactions](https://youtu.be/CbbcISQvy1E)
 * To deploy a smart contract we send a transaction without a "to" address, and the "data" of a transaction is the byte code of a contract.
 * To talk to a contract we can send another transaction to the smart contract address and in the "data" field we will have a call data.
+
+### [Gas](https://youtu.be/QlaQ2NiaZVc)
+* **Trasnsaction pool** - list of pending transactions, miners pick "best" transactions from the pool.
+* Sending value in transactiong is one price, sending some message (call data) with it costs more, longer message - higher price.
+* **Everything is a transaction** whether you're sending something to someone, you're sending data to someone or you're sending data to no one (deploying a smart contract). Or you're sending data to a contract which is interacting with a contract.
+* [Ethereum yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf) - on page 26 all different commands and what they cost in gas. Most of these are very cheap but storage is expensive. 
+* When we write our code and that is compiled into **op codes**, and those op codes cost some money. And it runs in the execution environment, doing what we are asking it to do but the **gas limit** says only go so far.
+* **Halting problem** - smart contracts are deterministic but if we were to write some function it is impossible to tell if that function is going to run forever or not without just running it. And gas limit helps to address that issue.
+* **Gas price** is used to bid to get into the block and **Gas limit** tells miner how far to go in terms of executing that code. As soon as you hit your gas limit everything reverts and reverses.
